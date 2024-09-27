@@ -253,6 +253,7 @@ iframe{
   transition: border 0.3s;
   caret-color: white; /* Белый цвет курсора */
   background: black; /* Чёрный фон поля ввода */
+  color: white;
 }
 
 #search:focus {
