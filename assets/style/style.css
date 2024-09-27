@@ -243,14 +243,16 @@ iframe{
 }
 
 #search {
-  width: 95%;
+  width: 100%; /* Поле ввода теперь будет занимать 100% ширины контейнера */
+  box-sizing: border-box; /* Учитывает внутренние отступы и границы в ширине */
   padding: 10px;
   font-size: 16px;
   border-radius: 15px;
   border: 2px solid #ffffff; /* Белая обводка для поля */
   outline: none;
   transition: border 0.3s;
-  caret-color: white;
+  caret-color: white; /* Белый цвет курсора */
+  background: black; /* Чёрный фон поля ввода */
 }
 
 #search:focus {
@@ -270,6 +272,6 @@ iframe{
   }
 }
 
-input{
+input {
   background: black;
 }
