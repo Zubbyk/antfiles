@@ -178,7 +178,11 @@ body {
   z-index: 1;
 }
 
-
+.glowing-iframe {
+  display: inline-block; /* Это поможет ограничить ширину по горизонтали */
+  box-shadow: 0 0 10px 2px white; /* Уменьшаем горизонтальное свечение */
+  border-radius: 9px; /* Округленные углы (необязательно) */
+}
 
 
 
