@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ANT REDUX's</title>
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/style/redux.css">
+	<script type="text/javascript" src="assets/scripts/script.js"></script>
+</head>
+<body>
+
+<div id="imageModal" class="modal">
+	<span class="close">&times;</span>
+	<img class="modal-content" id="modalImage">
+</div>
+
+<script src="assets/stranichki/stylescripts/img.js"></script>
+
+<style>
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  background: url('assets/images/1.png') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: left 0.3s; /* анимация при изменении положения */
+}
+
+.menu-btn::after {
+  content: "Click me";
+  position: absolute;
+  top: 50%;
+  left: 40px; /* облачко справа от кнопки */
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  color: black;
+  white-space: nowrap;
+}
+
+.menu-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30px; /* положение треугольника у облачка справа от кнопки */
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+}
+
+</style>
+
+<!-- Кнопка для скрытия/показа навигации -->
+<div class="menu-btn" onclick="toggleNav()"></div>
+
+<!-- Навигация слева -->
+<div class="sidenav" id="mySidenav">
+    <h2>ANT REDUX's</h2>
+    <a href="#">Главная</a>
+    <a href="assets/stranichki/redux.html">Редуксы</a>
+    <a href="assets/stranichki/gunpack.html">Ганпаки</a>
+    <a href="assets/stranichki/roads.html">Дороги</a>
+    <a href="assets/stranichki/Rastitelnost.html">Растительность</a>
+	<a href="assets/stranichki/arena.html">Арена</a>
+	<a href="assets/stranichki/shmotki.html">Заменёнки</a>
+	<a href="assets/stranichki/minimaps.html">Мини-карта</a>
+	<a href="assets/stranichki/mapcords.html">Корды мапы</a>
+	<a href="assets/stranichki/defaultfiles.html">Дефолт файлы</a>
+	<a href="#">soon</a>
+	<a href="#">soon</a>
+	<a href="#">soon</a>
+</div>
+
+<!-- Основной контент -->
+<div class="main" id="mainContent">
+	<div class="category-content" id="indexContent">
+		<h1>Проги for виндовс</h1>
+
+		<div class="video-container">
+			<div class="caption">
+			  <h2></h2>
+			</div>
+			<div class="glowing-iframe">
+				<img src="assets/images/chrome.png" width="100px" height="100px">
+			</div>
+			<div>
+			  <br><a target="_blank" href='ChromeSetup.exe' download><button>DOWNLOAD</button></a>
+			</div>
+		  </div>
+		
+	</div>
+</div>
+
+<footer>
+	<p><a href='https://www.youtube.com/@ZubbyGG/featured'><img src='assets/images/youtube.png' height='70px' width='70px'></a>
+	   <a href='https://discord.gg/wKnJ3t9zyY'><img src='assets/images/discord.png' height='70px' width='70px'></a>
+	   <a href='хуй тебе' target="_blank"><img src='assets/images/telegram.png' height='70px' width='70px'></a>
+	</p>
+</footer>
+
+</body>
+
+</html>
