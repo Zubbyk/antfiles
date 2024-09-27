@@ -3,20 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ANT REDUX's</title>
+	<title>ANT FILES</title>
 	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/style/redux.css">
 	<script type="text/javascript" src="assets/scripts/script.js"></script>
+	<script type="text/javascript" src="assets/scripts/search.js"></script>
 </head>
 <body>
-
-<div id="imageModal" class="modal">
-	<span class="close">&times;</span>
-	<img class="modal-content" id="modalImage">
-</div>
-
-<script src="assets/stranichki/stylescripts/img.js"></script>
 
 <style>
 
@@ -85,34 +79,384 @@
 <!-- Основной контент -->
 <div class="main" id="mainContent">
 	<div class="category-content" id="indexContent">
+		<!-- Поисковая панель -->
+		 <center>
+		<div id="searchContainer">
+			<input type="text" id="search" placeholder="Чё ищем?" onkeyup="filterImages()">
+		</div>
+		</center>
+		<br><br>
 		<h1>Проги for виндовс</h1>
 		<h1>Browser</h1>
 		<div class="glowing-iframe">
+
+
 			<div class="video-container">
 				<div class="caption">
-				<h2></h2>
+					<h2></h2>
 				</div>
 				<div>
-					<img src="assets/images/chrome.png" width="100px" height="100px">
+					<img src="assets/images/chrome.png" width="100px" height="100px" title="Chrome">
 				</div>
 				<div>
-				<br><a target="_blank" href='assets/apps/ChromeSetup.exe' download><button>DOWNLOAD</button></a>
+					<br><a target="_blank" href='assets/apps/ChromeSetup.exe' download><button>DOWNLOAD</button></a>
 				</div>
 			</div>
 
 			<div class="video-container">
 				<div class="caption">
-				<h2></h2>
+					<h2></h2>
 				</div>
 				<div>
-					<img src="assets/images/Yandex Browser.png" width="150px" height="100px">
+					<img src="assets/images/Yandex Browser.png" width="100px" height="100px" title="Yandex">
 				</div>
 				<div>
-				<br><a target="_blank" href='assets/apps/Yandex.exe' download><button>DOWNLOAD</button></a>
+					<br><a target="_blank" href='assets/apps/Yandex.exe' download><button>DOWNLOAD</button></a>
 				</div>
 			</div>
+
+			<div class="video-container">
+				<div class="caption">
+					<h2></h2>
+				</div>
+				<div>
+					<img src="assets/images/operagx.png" width="100px" height="100px" title="OperaGX">
+				</div>
+				<div>
+					<br><a target="_blank" href='assets/apps/OperaGXSetup.exe' download><button>DOWNLOAD</button></a>
+				</div>
+			</div>
+
+
+
 		</div>
-		
+			<h1> Launchers </h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/Steam_Logo.png" width="100px" height="100px" title="Steam">
+					</div>
+					<div>
+						<br><a target="_blank" href='assets/apps/SteamSetup.exe' download><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/527px-Epic_Games_logo.png" width="100px" height="100px" title="EpicGamesLauncher">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi' download><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/Majestic.jpg" width="100px" height="100px" title="MajesticLauncher">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://majestic-files.com/launcher/cis/MajesticLauncherSetup.exe' download><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/tlauncher.png" width="100px" height="100px" title="TLauncher">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://tlauncher.org/installer' download><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/Launcher_Icon.png" width="100px" height="100px" title="MinecraftLauncher">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://aka.ms/minecraftClientGameCoreWindows' download><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/WarGaming.png" width="180px" height="100px" title="WarGamingLauncher">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://redirect.wargaming.net/WGC/Wargaming_Game_Center_Install_RU.exe?_gl=1*1vn88dj*_gcl_au*MTY5NzE4MjIuMTcyMzMyMDY4OQ..*FPAU*MTY5NzE4MjIuMTcyMzMyMDY4OQ..*_ga*NDk4MjI2NzE1LjE3MjMzMjA2OTA.*_ga_BWRKLL4HR5*MTcyNzQ3MTQ0Mi40LjAuMTcyNzQ3MTQ0My4wLjAuOTg1MDI2ODc4*_fplc*eGRpZ0Y1WDhIWGdvcVA1eGM0VlhNanFrTyUyRmpFVXBQbkZsWjklMkJHUXNMUjFTaWs0OCUyRnFaekdLclpIc09MNk1BTlVsaVR2UVc5ayUyQkFSc0dhclVSZ3Yzb2hGQWl1VjBXMkZIZzJFRiUyQlFWc3BzbWJaNGxvaTdKZktpa09uV0paUSUzRCUzRA..&_ga=2.24894330.1599096691.1727471442-498226715.1723320690' download><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
+			<h1>Social</h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/discord.png" width="100px" height="100px" title="Discord">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/telegram.png" width="100px" height="100px" title="TelegramDesktop">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://telegram.org/dl/desktop/win64'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
+			<h1>ZIP</h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/winrar.png" width="100px" height="100px" title="WinRAR">
+					</div>
+					<div>
+						<br><a target="_blank" href='assets/apps/winrar-x64-701ru.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+	
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/7z.png" width="90px" height="80px" title="7-Zip">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://www.7-zip.org/a/7z2301-x64.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
+			<h1>ADOBE</h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/photoshop.png" width="100px" height="100px" title="Adobe Photoshop">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://drive.google.com/drive/folders/1h9wkSLr_PRizEliZdCnHr1LunflFdORQ?usp=sharing'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
+			<h1>NVIDIA/AMD</h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/NvidiaGeforceExpirience.png" width="100px" height="100px" title="GeforceExperience">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://ru.download.nvidia.com/GFE/GFEClient/3.20.0.118/GeForce_Experience_v3.20.0.118.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/amd.png" width="100px" height="100px" title="AMD Adrenaline">
+					</div>
+					<div>
+						<br><a target="_blank" href='assets/apps/amd-software-adrenalin-edition-24.8.1-minimalsetup-240926_web.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
+			<h1>IT</h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/vscode.png" width="100px" height="100px" title="VSCode">
+					</div>
+					<div>
+						<br><a target="_blank" href='assets/apps/VSCodeUserSetup-x64-1.93.1.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/Github-desktop-logo-symbol.svg.png" width="100px" height="100px"title="Github Desktop">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://central.github.com/deployments/desktop/desktop/latest/win32'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/git.svg" width="100px" height="100px" title="Git">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/Git-2.46.2-64-bit.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/OpenIV-Logo-Icon.png" width="100px" height="100px" title="OpenIV">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://openiv.com/WebIV/guest.php?get=1'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/ffdec.png" width="100px" height="100px" title="JPEXS Free Flash Decompiler">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version21.1.0/ffdec_21.1.0_setup.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
+			<h1>TOOLS</h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/lightshot.png" width="100px" height="100px" title="LightShot">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://app.prntscr.com/build/setup-lightshot.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/lghub.webp" width="100px" height="100px" title="LGHub">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/radmin-vpn-download.avif" width="100px" height="100px" title="RadminVPN">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://download.radmin-vpn.com/download/files/Radmin_VPN_1.4.4642.1.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
+			<h1>Пират</h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/uTorrent.svg" width="100px" height="100px" title="uTorrent">
+					</div>
+					<div>
+						<br><a target="_blank" href='assets/apps/utorrent_installer.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/New_qBittorrent_Logo.svg.png" width="100px" height="100px" title="qBittorrent">
+					</div>
+					<div>
+						<br><a target="_blank" href='assets/apps/qbittorrent_4.6.7_x64_setup.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
+			<h1>Music</h1>
+			<div class="glowing-iframe">
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/Spotify_Primary_Logo_RGB_White.png" width="100px" height="100px" title="Spotify">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://download.scdn.co/SpotifySetup.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+
+				<div class="video-container">
+					<div class="caption">
+						<h2></h2>
+					</div>
+					<div>
+						<img src="assets/images/YandexMusic.png" width="100px" height="100px" title="YandexMusic">
+					</div>
+					<div>
+						<br><a target="_blank" href='https://music-desktop-application.s3.yandex.net/stable/Yandex_Music_x64_5.20.2.exe'><button>DOWNLOAD</button></a>
+					</div>
+				</div>
+			</div>
+
 	</div>
 </div>
 
